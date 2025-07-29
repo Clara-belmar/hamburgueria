@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.bodoni-moda-sc-{
+    font-family: "Bodoni Moda SC", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.nav-superior{
+    width: 100%;
+    display: flex;
+
+    height: 3rem;
+    background-color: rgb(244, 244, 106);
+}
+
+#menu-principal{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* centraliza horizontalmente */
+    align-items: center;/* centraliza verticalmente */
+    color: rgb(0, 0, 0);
+    margin: 0;
+    padding: 0 10px;
+    width: 100%;
+}
+h1{
+    text-align: center;
+}
+.banner{
+    width: 100%;
+    height: 20rem;
+    background-image: url("../img/hamburguer.png");
+    background-position: center;
+    background-size: cover;
+}
