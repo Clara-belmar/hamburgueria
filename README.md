@@ -8,5 +8,5 @@ MTec TI 2025 da Etec de Aguaí
 Começamos o projeto definindo :
 * Sua pasta;
 * Subpastas(css,js, img, templates); 
-* index.html(com nuvbar superior);
+* index.html(com navbar superior);
 * Ícone na aba do navegador (favicon).

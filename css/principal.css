@@ -34,7 +34,17 @@ h1{
 .banner{
     width: 100%;
     height: 20rem;
-    background-image: url("../img/hamburguer.png");
+    background-image: url("./img/hamburguer.jpg");
     background-position: center;
     background-size: cover;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    color: yellow;
+}
+#container-principal{
+    height: 500px;
+    width: 60%;
 }
