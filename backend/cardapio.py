@@ -5,3 +5,6 @@ class Lanche:
     
     def adicionarItem(self, item):
         self.itens.append(item)
+    
+    def __str__(self):
+        return f"Item{self.itens};"
