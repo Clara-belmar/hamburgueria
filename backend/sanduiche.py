@@ -1,4 +1,5 @@
-cardapio=['X-Tudo', 'X-Burguer','X-Salada']
-
-for item in cardapio:
-    print(f"opção: {item})
+class Cardapio:
+    def __init__(self,nome,preco,ingredientes):
+        self.nome = nome
+        self.preco = preco
+        self.ingredientes = ingredientes
