@@ -1,28 +1,27 @@
-from sanduiche import Cardapio
-from cardapio import Lanche
+from sanduiche import Lanche
+from cardapio import Cardapio
 
-resposta = 's'
+resposta = "s"
+
+#criando o objeto da classe Cardapio fora do laço
+c = Cardapio()
 
 while resposta == 's':
 
     ingredientes=[]
-
     nome = input("Nome do novo lanche: ")
     preco = float(input("Insira o preço: "))
-
-    for i in range(4):
+    qtdeIngredientes = int(input("Escreva quantos ingredientes você quer adicionar: "))
+    for i in range(qtdeIngredientes):
         ingrediente = input(f"informe o ingrediente {i+1}: ")
         ingredientes.append(ingrediente)
-
-    #lanche1 = Cardapio('Egg-Burger',24.99,['pão com gergelim', 'queijo parmesão', 'ovo', 'hamburguer'])
-    #lanche2 = Cardapio('Hot-dog New York Style',35.50, ['pão', 'salsicha de bife', 'molho de cebola', 'chucrute', 'mostarda marrom ardida'])
-    #lanche3 = Cardapio('X-Tudo', 25.99, ['pão', 'milho', 'queijo parmesão', 'brócoles', 'couve-flor', 'hamburguer', 'maionese verde', 'bacon', 'ovo', 'presunto'])
-    l = Cardapio(nome,preco,ingredientes)
-
-    print(f"Nome:{l.nome}; Preço:{l.preco}; Ingredientes: {l.ingredientes}")
     
-    c = Lanche()
+    #criando o objeto da classe Lanche dentro do laço
+    l = Lanche(nome,preco,ingredientes)
+    
+    #adicionando o lanche "l" ao cardapio "c"
     c.adicionarItem(l)
 
     resposta = input("Deseja continuar cadastrando lanches? (s/n) ")
-print(f"Cardápio: {c.itens})
+
+c.exibirCardapio()
